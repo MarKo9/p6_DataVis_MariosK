@@ -3,7 +3,10 @@
 ### Course Project for Udacity course 'Data Visualization and D3.js'
 
 #### Summary
-This is a visualiztion of the baseball dataset - average hit rate is plotted against home run count, with each point representing a player - the points are coloured by handedness of each player. There is also a barplot of the average batting averages for each type of handedness. The scatterplot clearly shows that there is a correlation between average hit rate and home run count, but the relationship is not linear - players with a higher hit rate tend to get far more home runs than those with a low rate. More interestingly, the barplot shows that left-handed and both-handed batters tend to have better batting averages than right-handers.
+
+The data vizualization is a bubble chart about the performance of Facebook Ads across 6 industries "Consumer Packaged Goods",  "Ecommerce" , "Automotive",  "Professional Services", "Retail" and "Technology" described by different colours. The comparison is based on 2 basic metrics; CPC (cost per click) on the Y axis and relevance score* on the X axis. The performance is also compared against the average Daily budget which is displayed by the size of the boubles on the chart. The first thing to notice is that there clearly a negative correlation between the CPC and the relevance score regardless of the industry of teh advertiser but there is no connection with the daily budget. 
+
+*Relevance score is calculated based on the positive and negative feedback we expect an ad to receive from its target audience.
 
 #### Design
 The dataset includes statistics on handedness, height, weight, batting average, and home run count. After some exploration of the data in Rstudio, I decided that height and weight didn't tell much of a story. I did find a relationship between hit rate and home runs, so plotted these on the x and y axes. As handedness is a factor with only three levels, it was easy to represent by colouring the points of a scatterplot accordingly.
