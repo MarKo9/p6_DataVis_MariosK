@@ -7,7 +7,7 @@
   <script src="/dist/dimple.v2.1.6.js"></script>
   <script type="text/javascript">
     var svg = dimple.newSvg("#chartContainer", 590, 400);
-      d3.tsv("/data/p6_example_data_bubbles_vertical_lollipop.tsv", function (data) {
+      d3.tsv("p6_example_data_bubbles_vertical_lollipop.tsv", function (data) {
 
         var myChart = new dimple.chart(svg, data);
         myChart.setBounds(60, 30, 500, 330)
