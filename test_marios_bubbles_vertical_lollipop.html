@@ -8,7 +8,7 @@
   <script type="text/javascript">
   
     var svg = dimple.newSvg("#chartContainer", 890, 600);
-      d3.tsv("/data/p6_example_data_bubbles_vertical_lollipop.tsv", function (data) {
+      d3.tsv("/data/p6_data.tsv", function (data) {
 
         var myChart = new dimple.chart(svg, data);
         myChart.setBounds(60, 80, 800, 430)
