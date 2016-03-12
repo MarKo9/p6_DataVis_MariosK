@@ -4,8 +4,12 @@
 
 #### Summary
 
-The data visualization is a bubble chart about the performance of Facebook Ads across 6 industries "Consumer Packaged Goods",  "Ecommerce" , "Automotive",  "Professional Services", "Retail" and "Technology" described by different colors. The comparison is based on 2 basic metrics; cost per click on the Y axis and relevance score* on the X axis. The performance is also compared against the average Daily budget displayed by the size of the bubble on the chart. The first thing to notice is that there is clearly a negative correlation between the CPC and the relevance score regardless of the industry of the advertiser but there is no connection with the daily budget. 
-Among the ads management professionals in many cases there is the conception that daily budget affects positively the overall performance while others believe that with smaller budget it is easier to get better results since the target audience is narrower and is expect to be more interested in an ad. 
+The data visualization is a bubble chart about the performance of Facebook Ads across 6 industries "Consumer Packaged Goods",  "Ecommerce" , "Automotive",  "Professional Services", "Retail" and "Technology" described by different colors. The comparison is based on 2 basic metrics; cost per click on the Y axis and relevance score* on the X axis. The performance is also compared against the average Daily budget displayed by the size of the bubble on the chart. 
+
+They key takeaways are:
+1.	First of all the clear negative correlation between the cost per click and the relevance score regardless of the industry of the advertiser. As suggested by Facebook the cost per click of an ad is decreasing proportionally as the relevance score of an ad is increasing and this suggestion can be confirmed.
+
+2.	Another fact is the absent of any effect of daily budget on ad performance. Among the ads management professionals in many cases there is the conception that daily budget affects positively the overall performance while others believe that with smaller budget it is easier to get better results since the target audience is narrower and is expected to be more interested in an ad. 
 Finding that there is no actual correlation I though that it is a good way to demonstrate that budget is not a variable that ad managers would be focusing for performance optimization and that it seems situation specific, I though it is an interesting fact to display. 
 
 *Relevance score is calculated a metric provided by Facebook on the ads report and it is calculated based on the positive and negative feedback from its target audience on a an ad.
