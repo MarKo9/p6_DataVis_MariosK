@@ -3,16 +3,15 @@
 <meta charset="utf-8">
 <html>
 <div id="chartContainer">
-  <script src="/lib/d3.v3.4.8.js"></script>
-  <script src="/dist/dimple.v2.1.6.js"></script>
+  <script src="http://dimplejs.org/lib/d3.v3.4.8.js"></script>
+  <script src="http://dimplejs.org/dist/dimple.v2.1.6.min.js"></script>
   <script type="text/javascript">
   
     var svg = dimple.newSvg("#chartContainer", 890, 600);
-      d3.tsv("/data/p6_data.tsv", function (data) {
+    d3.tsv("/data/p6_data.tsv", function (data) {
 
         var myChart = new dimple.chart(svg, data);
         myChart.setBounds(60, 80, 800, 430)
-
 
         var x = myChart.addCategoryAxis("x", "Relevance Score");
         x.addOrderRule("Relevance Score");
@@ -20,15 +19,13 @@
         myChart.addMeasureAxis("y", "Cost Per Click").fontSize = "14";
         myChart.addMeasureAxis("z", "Daily Budget");
 
-      // average
+        // average
         var mySeries = myChart.addSeries( ["industry"], dimple.plot.bubble);
         mySeries.aggregate = dimple.aggregateMethod.avg;
 
         var myLegend = myChart.addLegend(830, 110, 60, 300, "Right");
         myLegend.fontSize = "12";
         myChart.draw();
-
-
 
         myChart.legends = [];
         
@@ -37,24 +34,24 @@
           .data(["Click a legend to","show/hide industry:"])
           .enter()
           .append("text")
-            .attr("x", 690)
-            .attr("y", function (d, i) { return 90 + i * 14; })
-            .style("font-family", "sans-serif")
-            .style("font-size", "14px")
-            .style("color", "Black")
-            .text(function (d) { return d; });
+          .attr("x", 690)
+          .attr("y", function (d, i) { return 90 + i * 14; })
+          .style("font-family", "sans-serif")
+          .style("font-size", "14px")
+          .style("color", "Black")
+          .text(function (d) { return d; });
         //labels_main title
         svg.selectAll("title_text")
           .data(["Facebook Ads performance: Cost per click, relevance score relationship ","and the effect of daily budget by advertiser industry"])
           .enter()
           .append("text")
-            .attr("x", 30)
-            .attr("y", function (d, i) { return 30 + i * 20; })
-            .style("font-family", "sans-serif")
-            .style("font-size", "20px")
-            .style("font-weight", "bold")
-            .style("color", "Black")
-            .text(function (d) { return d; });
+          .attr("x", 30)
+          .attr("y", function (d, i) { return 30 + i * 20; })
+          .style("font-family", "sans-serif")
+          .style("font-size", "20px")
+          .style("font-weight", "bold")
+          .style("color", "Black")
+          .text(function (d) { return d; });
 
         // add interraction
         // Get a unique list of Owner values to use when filtering
@@ -88,10 +85,8 @@
             myChart.data = dimple.filterData(data, "industry", filterValues);
             // Passing a duration parameter makes the chart animate. Without
             // it there is no transition
-
             myChart.draw(800);
           });
-
       });
   </script>
 </div>
