@@ -7,6 +7,7 @@
 The data visualization is a bubble chart about the performance of Facebook Ads across 6 industries "Consumer Packaged Goods",  "Ecommerce" , "Automotive",  "Professional Services", "Retail" and "Technology" described by different colors. The comparison is based on 2 basic metrics; cost per click on the Y axis and relevance score* on the X axis. The performance is also compared against the average Daily budget displayed by the size of the bubble on the chart. 
 
 They key takeaways are:
+
 1.	First of all the clear negative correlation between the cost per click and the relevance score regardless of the industry of the advertiser. As suggested by Facebook the cost per click of an ad is decreasing proportionally as the relevance score of an ad is increasing and this suggestion can be confirmed.
 
 2.	Another fact is the absent of any effect of daily budget on ad performance. Among the ads management professionals in many cases there is the conception that daily budget affects positively the overall performance while others believe that with smaller budget it is easier to get better results since the target audience is narrower and is expected to be more interested in an ad. 
