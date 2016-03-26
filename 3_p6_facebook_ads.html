@@ -7,7 +7,7 @@
   <script type="text/javascript">
   
     var svg = dimple.newSvg("#chartContainer", 890, 700);
-    d3.tsv("/data/p6_data.tsv", function (data) {
+    d3.tsv("p6_data.tsv", function (data) {
         var myChart = new dimple.chart(svg, data);
         myChart.setBounds(60, 180, 800, 430)
         var x = myChart.addCategoryAxis("x", "Relevance Score");
