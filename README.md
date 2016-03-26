@@ -27,7 +27,7 @@ Furthermore from another one of my colleagues, I have received the feedback that
 
 #### Feedback
 Other that the two in person feedback, I have also addes a post on the forums (https://discussions.udacity.com/t/p6-data-visualization-feedback-request/158943) receiving feedback from 3 other persons. All of them have pointed out that it is difficult to understand want the size represents and its relationship on the other two metrics. For this reason I have added a title displaying this information and pointing the relationship between the Cost Per Click and Relevance Score and that the effect on the daily spend is up to the reader to discover. 
-One of the comments mentioned also that the chart’s overall size was small making it difficult to read so I have resized and also used larger size on the labels and legends. 
+One of the comments mentioned also that the chart’s overall size was small making it difficult to read so I have resized and also used larger size on the labels and legends. Furthermore on my second attempt I got the feedback that the message of the visualization was not clear enough so I have added the main points to the graph.
 
 
 #### Feedback memo:
