@@ -8,7 +8,7 @@
   
     var svg = dimple.newSvg("#chartContainer", 890, 700);
     //scaling the var I am going to set as the size of the bubbles
-    d3.tsv("/data/p6_data.tsv", function(d) { 
+    d3.tsv("p6_data.tsv", function(d) { 
             d['Daily_Budget_Sqrt'] = Math.sqrt(d['Daily Budget']);
             return d;
         },function(data){
